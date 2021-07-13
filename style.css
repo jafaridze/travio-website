@@ -677,3 +677,111 @@
         color: #fff;
         border: inherit !important;
     }
+    /* deals-section */
+    
+    .deals-section {
+        background-image: url("./img/deals-1.jpg");
+        width: 100%;
+        height: 701px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    
+    .deals-section:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: -webkit-linear-gradient(0deg, #061a38 20%, rgba(0, 0, 0, 0.0) 100%);
+        top: 0px;
+        right: 0px;
+    }
+    
+    .card-one {
+        max-width: 370px !important;
+        height: 401px;
+        background: #ffffff;
+        padding: 44px 40px 41px 50px;
+        border-radius: 10px;
+        z-index: 1000;
+        position: relative;
+    }
+    
+    .card-body-deals h3 {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 800;
+        margin-bottom: 5px;
+        font-family: 'Work Sans', sans-serif;
+        color: #061a3a;
+    }
+    
+    .card-body-deals .price {
+        margin-bottom: 16px;
+    }
+    
+    .card-body-deals .price h4 {
+        color: #ff7c5b;
+        margin: 0px 10px 0px 0px;
+        font-size: 20px;
+        font-family: 'Work Sans', sans-serif;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+    
+    .card-body-deals .price del {
+        color: #808080;
+        font-size: 20px;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+    }
+    
+    .card-body-deals p {
+        font-size: 15px;
+        margin-bottom: 30px;
+        color: #808080;
+        font-family: 'Work Sans', sans-serif;
+        line-height: 1.9;
+    }
+    
+    .card-body-deals .btn-deals {
+        padding: 12.5px 29px;
+        border-radius: 4px;
+        width: 140.81px;
+        height: 50px;
+        font-size: 15px;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        background-color: #FF7C5B;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        border: none;
+        transition: all 500ms ease;
+    }
+    
+    .card-body-deals .btn-deals:hover {
+        background: #061a3a;
+    }
+    
+    .card-body-deals .btn-deals::before {
+        transition-duration: 800ms;
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        content: "";
+        top: 100%;
+        left: 50%;
+        background: #061a3a;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-radius: 50%;
+        z-index: -1;
+    }
+    
+    .card-body-deals .btn-deals:hover::before {
+        top: -40%;
+    }
