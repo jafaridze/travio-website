@@ -25,7 +25,7 @@
     
     .outer-box {
         max-width: 1170px;
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
     }
     
@@ -992,7 +992,7 @@
     }
     
     .map-section .map-middle {
-        padding-top: 144px;
+        padding: 144px 0px 144px 0px;
     }
     
     .map-section .map-middle .sec-title {
@@ -1077,4 +1077,90 @@
         font-size: 16px;
         transition: all 500ms ease;
         line-height: 1.9;
+    }
+    /* funfact-section */
+    
+    .funfact-section {
+        background-image: url("./img/shape-9.png");
+        height: 221px;
+        width: 100%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .funfact-section .shape-left {
+        top: -57px;
+        left: 313px;
+    }
+    
+    .funfact-section .shape-right {
+        right: 299px;
+        bottom: -23px;
+    }
+    
+    .funfact-section .middle-funfact {
+        background: #ffffff;
+        padding: 37px 50px 40px 50px;
+        border-radius: 5px;
+        z-index: 1;
+        height: 221px;
+        box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 10%);
+        z-index: 1;
+        position: relative;
+    }
+    /* shape-img */
+    
+    .middle-funfact .shape-5 {
+        background-image: url("./img/shape-5.png");
+        height: 144px;
+        width: 230px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .middle-funfact .shape-6 {
+        background-image: url("./img/shape-6.png");
+        height: 144px;
+        width: 230px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .middle-funfact .shape-7 {
+        background-image: url("./img/shape-7.png");
+        height: 144px;
+        width: 230px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .middle-funfact .shape-8 {
+        background-image: url("./img/shape-8.png");
+        height: 144px;
+        width: 230px;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* shape-img */
+    
+    .middle-funfact .shape-5 .text-sec .number {
+        font-size: 40px;
+        line-height: 50px;
+        color: #061a3a;
+        font-weight: 700;
+        margin: 0px 0px 5px;
+    }
+    
+    .middle-funfact .shape-5 .text-sec p {
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: 500;
+        font-family: 'Work Sans', sans-serif;
+        color: #808080;
+        margin: 0px;
     }
