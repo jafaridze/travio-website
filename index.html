@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
     <link rel="stylesheet" href="./style.css">
 
@@ -23,10 +24,10 @@
         <div class="background-opacity">
 
         </div>
-        <div class="outer-box">
-            <header class="main-header">
 
-                <nav class="navbar h-100 navbar-expand-lg navbar-light  justify-content-between align-items-center">
+        <header class="main-header">
+            <div class="outer-box">
+                <nav class=" navbar p-0 h-100 navbar-expand-lg navbar-light  justify-content-between align-items-center">
                     <div class="logo">
                         <a href="https://smartdemowp.com/travio/">
                             <img src="https://smartdemowp.com/travio/wp-content/themes/travio/assets/images/logo.png" alt="Logo">
@@ -61,20 +62,20 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="menu-right-content">
-                        <button class=" icon">
-                                    <i class="fas fa-search"></i>
+                    <div class="menu-right-content d-flex align-items-center">
+                        <button class=" icon d-flex justify-content-center align-items-center">
+                                   <img src="./img/search.png" alt="">
                                 </button>
 
-                        <button class=" icon icon-user">
-                                    <i class="far fa-user"></i>
+                        <button class=" icon icon-user d-flex justify-content-center align-items-center">
+                                   <img src="./img/icon-user.png" alt="">
                                 </button>
                     </div>
 
                 </nav>
+            </div>
+        </header>
 
-            </header>
-        </div>
         <!-- banner-section -->
         <section class="outer-box banner-section ">
             <div class="content-box">
@@ -82,24 +83,25 @@
                 <h2>Explore <br>Your Travel</h2>
                 <p>Discover your next great adventure, become an explorer to get started!</p>
                 <div class="form-inner d-flex">
-                    <form class="d-flex" action="https://smartdemowp.com/travio/tour/" role="search" method="get">
+                    <form class="d-flex justify-content-between w-100" action="https://smartdemowp.com/travio/tour/" role="search" method="get">
 
-                        <div class=" form-group">
+                        <div class=" form-group d-flex">
                             <input type="email" placeholder="Where to?" class="form-control" id="inputEmail4 ">
                         </div>
-                        <div class="form-group">
-                            <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                  </select>
+                        <div class="form-group d-flex">
+                            <input type="text" placeholder="When?" class="form-control" id="datepicker">
                         </div>
-                        <div class="form-group">
-                            <select id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                  </select>
+                        <div class="form-group d-flex">
+                            <select class="form-select" aria-label="Default select example">
+                                <option class="option-box option" value="1"  selected value="travel type">Travel Type</option>
+                                <option class="option-box" value="2" value="adventure-tours">adventure-tours</option>
+                                <option class="option-box" value="3" value="travel type">City Tours</option>
+                                <option class="option-box" value="4" value="travel type">Couple Tours</option>
+                                <option class="option-box" value="5" value="travel type">Group Tours</option>
+                               
+                              </select>
                         </div>
-                        <div class="form-group color m-0">
+                        <div class="form-group d-flex color m-0">
                             <button class="d-flex align-items-center justify-content-center">
                                 <i class="fas fa-search "></i> 
                                 <p class="m-0 ml-2">Find Now</p> 
@@ -239,9 +241,9 @@
                     <p>MODERN & BEAUTIFUL</p>
                     <h2>Our Most Popular Adventures</h2>
                 </div>
-                <div class="card card-inner p-0 col-4">
+                <div class="card card-inner col-4">
                     <div class="card-img-top">
-                        <img src="./img/tour-1.jpg" alt="...">
+                        <img class="w-100 h-100" src="./img/tour-1.jpg" alt="...">
                     </div>
 
                     <div class="cards-body">
@@ -265,9 +267,9 @@
                     </div>
                 </div>
 
-                <div class="card card-inner p-0 col-4">
+                <div class="card card-inner  col-4">
                     <div class="card-img-top">
-                        <img src="./img/tour-1.jpg" alt="...">
+                        <img class="w-100 h-100" src="./img/tour-1.jpg" alt="...">
                     </div>
                     <div class="cards-body">
                         <div class="rating">
@@ -290,9 +292,9 @@
                     </div>
                 </div>
 
-                <div class="card card-inner p-0 col-4">
+                <div class="card card-inner  col-4">
                     <div class="card-img-top">
-                        <img src="./img/tour-3.jpg" alt="...">
+                        <img class="w-100 h-100" src="./img/tour-3.jpg" alt="...">
                     </div>
                     <div class="cards-body">
                         <div class="rating">
@@ -319,7 +321,7 @@
     </section>
 
     <!-- deals-section -->
-    <section class="deals-section d-flex align-items-center">
+    <section class="deals-section ">
         <div class="outer-box ">
             <div class="card-one d-flex">
                 <div class="card-body-deals p-0 ">
@@ -405,13 +407,13 @@
     </section>
 
     <section class="map-section position-relative">
-        <div class="outer-box map-middle position-relative">
+        <div class=" map-middle position-relative">
             <div class="sec-title">
                 <p class="text-center">MODERN & BEAUTIFUL</p>
                 <h2 class="text-center">Explore the World for Travel</h2>
             </div>
             <div class="map-box ">
-                <img src="./img/map-1.png" alt="map">
+                <!-- <img src="./img/map-1.png" alt="map"> -->
             </div>
             <div class="single-location-box position-absolute">
                 <div class="map-marker d-flex justify-content-center align-items-center">
@@ -438,7 +440,7 @@
             <img src="./img/shape-3.png" alt="">
         </div>
         <div class="middle-funfact outer-box ">
-            <div class="row w-100 justify-content-between">
+            <div class="row w-100 justify-content-between m-0">
                 <div class="col-4 shape-5 d-flex justify-content-center align-items-center">
                     <div class="text-sec">
                         <p class="text-center number">2000+</p>
@@ -614,6 +616,7 @@
 
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
+
             </div>
         </div>
     </section>
@@ -624,14 +627,14 @@
             <h2 class="text-center">Explore Your Travel</h2>
             <p class="text-center">Your New Traveling Idea</p>
             <div class="video-btn d-flex justify-content-center">
-                <div class="play-box">
-                    <i class="fas fa-play"></i>
-                </div>
-                <div class="border position-absolute">
-                    <p class="border-animation "></p>
-                    <!-- <p class="border-animation border-2"></p>
-                    <p class="border-animation border-3"></p> -->
-
+                <div class="border">
+                    <div class="play-box">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <p class="main-border"></p>
+                    <p class="border-animation animated"></p>
+                    <p class="border-animation animated border-2"></p>
+                    <p class="border-animation animated border-3"></p>
                 </div>
 
             </div>
@@ -756,9 +759,75 @@
     <!-- pattern-section -->
     <section class="pattern-section position-relative">
         <div class="pattern-box position-absolute ">
-
         </div>
     </section>
+
+    <!-- background-footer -->
+    <footer class="position-relative">
+        <div class="background-footer">
+            <div class="outer-box">
+                <div class="row">
+                    <div class="col-3 footer-widget">
+                        <img width="126" height="24.78" src="./img/logo (1).png" alt="">
+
+                        <p>Lorem ipsum dolor amet consetetur adi pisicing elit sed eiusm tempor in cididunt ut labore dolore magna aliqua enim.</p>
+                        <div class="footer-icons d-flex">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-google-plus-g"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-2 footer-menu ">
+                        <h3>Services</h3>
+                        <ul class="widget-content p-0">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="https://smartdemowp.com/travio/blog/">Our Blog</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="https://smartdemowp.com/travio/contact/">Contact Us</a></li>
+                            <li><a href="#">Listing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-4 footer-gallery">
+                        <h3>Gallery</h3>
+                        <div class="footer-imgs">
+                            <img src="./img/footer-gallery-1.jpg" alt="">
+                            <img src="./img/footer-gallery-2.jpg" alt="">
+                            <img src="./img/gallery-3.jpg" alt="">
+                            <img src="./img/footer-gallery-4.jpg" alt="">
+                            <img src="./img/footer-gallery-5.jpg" alt="">
+                            <img src="./img/footer-gallery-6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3 footer-contact">
+                        <h3>Contacts</h3>
+                        <ul class="info-list p-0">
+                            <li class="d-flex p-0">
+                                <i class="fas fa-map-marker-alt"></i> Flat 20, Reynolds Neck, North Helenaville, FV77 8WS
+                            </li>
+                            <li class="d-flex p-0 align-items-center">
+                                <i class="fas fa-microphone"></i>+2(305) 587-3407
+                            </li>
+                            <li class="d-flex p-0 align-items-center">
+                                <i class="fas fa-envelope"></i> info@example.com
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="outer-box d-flex justify-content-between align-items-center footer-p">
+                <p class="m-0"> © 2021 All Right Reserved </p>
+                <p class="m-0">Terms of Service | Privacy Policy</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 
 
@@ -769,7 +838,13 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://kit.fontawesome.com/7cf104f13b.js " crossorigin="anonymous "></script>
-
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $(function() {
+        $("#datepicker").datepicker();
+    });
+</script>
 <script>
     const swiper = new Swiper('.swiper-container', {
         // Optional parameters
