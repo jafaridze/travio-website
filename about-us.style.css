@@ -36,10 +36,6 @@
         background-color: #fff;
     }
     
-    .header-lower ul {
-        margin-left: 50px;
-    }
-    
     .header-lower ul li {
         margin: 0px 20px;
         list-style: none;
@@ -52,6 +48,10 @@
     
     .header-lower ul li:hover {
         color: #FF7C5B;
+    }
+    
+    .header-lower img {
+        margin-right: 72px;
     }
     
     .menu-right-content button {
@@ -78,7 +78,7 @@
     }
     
     .right-menu {
-        margin-left: 167px;
+        margin-left: 95px;
     }
     
     .my-header {
