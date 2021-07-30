@@ -213,8 +213,11 @@
     transition: all 500ms ease;
 }
 
-.contact-info-section .icon-box:hover::before .icon-box i {
+.contact-info-section .info-icon:hover {
     background-color: #FF7C5B !important;
+}
+
+.contact-info-section .info-icon:hover i {
     cursor: pointer;
     color: #fff;
     transition: all 500ms ease;
